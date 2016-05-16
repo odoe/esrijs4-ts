@@ -1,0 +1,26 @@
+{
+  "name": "esrijs4-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "run": "grunt watch",
+    "postinstall": "typings install"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "dojo-typings": "^1.11.3",
+    "grunt": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-ts": "^5.5.1",
+    "grunt-tsconfig": "^0.2.2",
+    "grunt-tslint": "^3.1.0",
+    "tslint": "^3.10.2",
+    "typescript": "^1.8.10"
+  },
+  "dependencies": {
+    "react": "^15.0.2",
+    "react-dom": "^15.0.2"
+  }
+}

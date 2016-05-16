@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "module": "amd",
+    "noImplicitAny": true,
+    "outDir": "app",
+    "removeComments": false,
+    "sourceMap": true,
+    "jsx": "react",
+    "target": "es5",
+    "moduleResolution": "node",
+    "isolatedModules": false,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "declaration": false,
+    "noLib": false,
+    "preserveConstEnums": true,
+    "suppressImplicitAnyIndexErrors": true
+  },
+  "files": [
+    "./app/main.tsx",
+    "./app/components/Recenter.tsx",
+    "./typings.d.ts"
+  ]
+}
