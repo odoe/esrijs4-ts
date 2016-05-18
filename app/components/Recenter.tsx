@@ -1,12 +1,14 @@
-import React = require('react');
+import * as React from 'react';
+import * as Point from 'esri/geometry/Point';
+import * as MapView from 'esri/views/MapView';
 
 // Here is a case where maybe I want a
 // specific type alias called Coordinates.
 // I couldn't really use an interface for this.
-type Coordinates = __esri.Point | number[] | any;
+type Coordinates = Point | number[] | any;
 
 interface Props {
-  view: __esri.MapView;
+  view: MapView;
   initialCenter: Coordinates;
 }
 

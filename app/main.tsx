@@ -1,8 +1,8 @@
-import React = require('react');
-import ReactDOM = require('react-dom');
-import Map = require('esri/Map');
-import MapView = require('esri/views/MapView');
-import VectorTileLayer = require('esri/layers/VectorTileLayer');
+import * as React from 'react';
+import * as ReactDOM from 'react-dom';
+import * as Map from 'esri/Map';
+import * as MapView from 'esri/views/MapView';
+import * as VectorTileLayer from 'esri/layers/VectorTileLayer';
 // react component
 import Recenter from './components/Recenter';
 
@@ -17,7 +17,14 @@ const view = new MapView({
   container: 'viewDiv',
   map,
   center: [-100.33, 25.69],
-  zoom: 10
+  zoom: 10,
+  ui: {
+    components: [
+      "zoom",
+      "attribution",
+      "compass"
+    ]
+  }
 });
 
 view.then(() => {
